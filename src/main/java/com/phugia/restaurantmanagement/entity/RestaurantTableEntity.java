@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Table(name = "restaurant_tables")
 @Getter
 @Setter
-public class RestaurantTableEntity {
+public class RestaurantTableEntity extends BaseEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

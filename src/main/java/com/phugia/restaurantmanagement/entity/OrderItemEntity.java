@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Table(name = "order_items")
 @Getter
 @Setter
-public class OrderItemEntity {
+public class OrderItemEntity extends BaseEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

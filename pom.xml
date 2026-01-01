@@ -13,7 +13,7 @@
     <relativePath/>
   </parent>
 
-  <groupId>com.example</groupId>
+  <groupId>com.phugia</groupId>
   <artifactId>restaurant-management</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>restaurant-management</name>
@@ -33,6 +33,12 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    <!-- Liquibase -->
+    <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
     </dependency>
 
     <!-- MySQL -->
@@ -56,10 +62,10 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- Validation -->
     <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <scope>runtime</scope>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
 
   </dependencies>
@@ -73,8 +79,6 @@
         <version>3.11.0</version>
         <configuration>
           <release>17</release>
-          <source>16</source>
-          <target>16</target>
         </configuration>
       </plugin>
 

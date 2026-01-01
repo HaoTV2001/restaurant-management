@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Table(name = "menu_items")
 @Getter
 @Setter
-public class MenuItemEntity extends BaseEntity {
+public class MenuItemEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
